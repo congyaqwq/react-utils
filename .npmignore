@@ -1,0 +1,13 @@
+node_modules
+.github
+.changeset
+pnpm-lock.json
+tsconfig.json
+CHANGELOG.md
+stories
+.storybook
+*.log
+dist
+yarn.lock
+yarn-error.log
+package-lock.json
