@@ -6,7 +6,7 @@ import React from "react";
 
 // 2、usePrompt 的实现拦截了 react-router navigate history.go(..) 方法。
 
-export default function useCustomPrompt({
+export function usePrompt({
   doBlock,
   message,
   customFn,
@@ -17,7 +17,7 @@ export default function useCustomPrompt({
 }) {
   useBeforeUnload(doBlock);
 
-  usePrompt({ when: doBlock, message, customFn });
+  useCustomPrompt({ when: doBlock, message, customFn });
 }
 
 /**
@@ -28,7 +28,7 @@ export default function useCustomPrompt({
  * very incorrectly in some cases) across browsers if user click addition
  * back/forward navigations while the confirm is open.  Use at your own risk.
  */
-function usePrompt({
+function useCustomPrompt({
   when,
   message,
   customFn,
