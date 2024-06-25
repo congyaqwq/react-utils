@@ -1,5 +1,5 @@
 {
-  "name": "@congyaqwq/react-utils",
+  "name": "@cewcongyaqwq/react-utils",
   "version": "0.1.0",
   "description": "hook and util component for react",
   "main": "src/index.js",
